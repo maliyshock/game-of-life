@@ -1,0 +1,22 @@
+$themeInputBg: #f7f8fa;
+$base: #1c3c51;
+$secondary: #60c2ff;
+$accent: #ffc412;
+$hardAccent: #FF5F2CFF;
+$ok: #6FD221;
+$borders: #edeef2;
+$text-weak: #a8a8a8;
+$hoverBorders: darken(#ced0d9, 10%);
+$black: #333;
+
+:root {
+  --bg: #{$base};
+  --bg2: #{$secondary};
+  --accent: #{$accent};
+  --ok: #{$ok};
+  --hardAccent: #{$hardAccent};
+  --secondary: #{$secondary};
+  --text-weak: #{$text-weak};
+  --text: #{$black};
+  --borders: #{$borders};
+}

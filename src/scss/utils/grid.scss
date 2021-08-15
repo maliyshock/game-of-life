@@ -1,0 +1,45 @@
+.row {
+  display: flex;
+  flex-wrap: wrap;
+
+  width: 100%;
+
+  & + & {
+    margin-top: 4px;
+  }
+
+  &--between {
+    justify-content: space-between;
+  }
+
+  &--stick-together {
+    align-items: center;
+    flex-wrap: nowrap;
+
+    & > * {
+      margin-right: 8px;
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+
+  &--center {
+    align-items: center;
+  }
+}
+
+.column {
+  @include for-tablet-portrait-up {
+    width: 0;
+  }
+
+  flex-basis: 100%;
+  flex-grow: 1;
+  flex-shrink: 0;
+
+  width: 100%;
+  padding-right: 32px;
+  padding-left: 32px;
+}

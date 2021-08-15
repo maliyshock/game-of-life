@@ -1,0 +1,114 @@
+$path-to-fonts: '../../assets/fonts/';
+
+@font-face {
+  font-family: 'inter';
+  font-weight: 400;
+  font-style: normal;
+
+  src: url('#{$path-to-fonts}/inter/inter-regular.woff2') format('woff2'),
+  url('#{$path-to-fonts}/inter/inter-regular.woff') format('woff'),
+  url('#{$path-to-fonts}/inter/inter-regular.ttf') format('ttf');
+}
+
+@font-face {
+  font-family: 'inter';
+  font-weight: 500;
+  font-style: normal;
+
+  src: url('#{$path-to-fonts}/inter/inter-medium.woff2') format('woff2'),
+  url('#{$path-to-fonts}/inter/inter-medium.woff') format('woff'),
+  url('#{$path-to-fonts}/inter/inter-medium.ttf') format('ttf');
+}
+
+@font-face {
+  font-family: 'inter';
+  font-weight: 700;
+  font-style: normal;
+
+  src: url('#{$path-to-fonts}/inter/inter-bold.woff2') format('woff2'),
+  url('#{$path-to-fonts}/inter/inter-bold.woff') format('woff'),
+  url('#{$path-to-fonts}/inter/inter-bold.ttf') format('ttf');
+}
+
+html {
+  font-size: 14px;
+  font-weight: 400;
+  font-variant: none;
+
+  -moz-osx-font-smoothing: grayscale;
+  font-feature-settings: 'ss01' on, 'ss02' on, 'cv01' on, 'cv03' on;
+}
+
+* {
+  box-sizing: border-box;
+
+  font-family: 'inter', sans-serif;
+
+  font-feature-settings: 'ss01' on, 'ss02' on, 'cv01' on, 'cv03' on;
+}
+
+
+.p {
+  margin-bottom: 1em;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.h2,
+.h3,
+.h4,
+.h5 {
+  font-weight: 400;
+}
+
+//h1, h2, h3, h4, h5, h6, p {
+//  white-space: pre-line;
+//}
+
+.h1,
+h1 {
+  @include for-tablet-landscape-up {
+    font-size: 60px;
+  }
+
+  font-size: 40px;
+  font-weight: 500;
+  line-height: 1.2;
+}
+
+.h2,
+h2 {
+  @include for-tablet-landscape-up {
+    font-size: 48px;
+  }
+
+  font-size: 32px;
+  font-weight: 500;
+  line-height: 1.5em;
+}
+
+.h3,
+h3 {
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.h4,
+h4 {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.text--right {
+  text-align: right;
+}
+
+.text--weak {
+  color: var(--text-weak);
+}
+
+.text--color-danger {
+  color: var(--hardAccent)
+}
