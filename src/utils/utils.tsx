@@ -1,6 +1,5 @@
 import {COLS, HUMAN_COLOR, RESOLUTION, ROWS} from "../const";
-import Konva from "konva";
-// import {make2DArray} from "./make2Darray";
+import Konva from "../../node_modules/konva";
 
 type gridType = Array<Array<number>>
 
